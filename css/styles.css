@@ -63,23 +63,23 @@ address {
   font-style: normal;
 }
 
-.section{
+.section {
   padding: 48px 0;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
 }
 
-.hidden{
-position:absolute;
-left:-10000px;
-top:auto;
-width:1px;
-height:1px;
-overflow:hidden;
+.hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /* Button */
@@ -107,7 +107,30 @@ overflow:hidden;
 
 .link:hover {
   color: var(--color-brand-light);
-  font-weight: 600;
+}
+
+/* Header */
+.header {
+  background-color: lightgrey;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-menu {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 /* Hero section */
@@ -129,8 +152,9 @@ overflow:hidden;
 
 /* Advantages section */
 .advantages-list {
-  background-color: var(--color-brand-light);
-  color: var(--color-primary-light);
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 .section-title .accent {
@@ -146,18 +170,22 @@ overflow:hidden;
 .advanteges-item {
   font-size: 20px;
   font-weight: 300;
+  color: var(--color-primary-light);
+}
+.advanteges-section {
+  background-color: var(--color-brand-light);
+  padding: 16px 0;
 }
 
 /* Traditions section */
-.tradition-section{
+.tradition-section {
   padding-top: 96px;
 }
 
-.traditions-title{
+.traditions-title {
   margin-bottom: 42px;
 }
 
-/* Traditions */
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -168,6 +196,19 @@ overflow:hidden;
   text-transform: uppercase;
 }
 
+.traditions-container {
+  display: flex;
+  gap: 100px;
+  justify-content: space-between;
+  gap: 40px;
+}
+.traditions-text.limited {
+  max-width: 360px;
+}
+.traditions-content {
+  max-width: 710px;
+}
+
 /* Chefs section */
 .chef-title {
   font-size: 40px;
@@ -175,7 +216,7 @@ overflow:hidden;
   margin-bottom: 16px;
 }
 
-.chefs-title{
+.chefs-title {
   margin-bottom: 80px;
 }
 
@@ -190,12 +231,25 @@ overflow:hidden;
   font-weight: 300;
 }
 
-.formats-title{
+.formats-title {
   margin-bottom: 80px;
+}
+.format-card {
+  border-radius: 10px solid;
+  border-color: lightgray;
+}
+.formats-list {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+.formats-item{
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 /* Contacts */
-.contact-title{
+.contact-title {
   margin-bottom: 16px;
 }
 
