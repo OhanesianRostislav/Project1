@@ -241,7 +241,7 @@ address {
 
 .chef-photo {
   border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light)  -16px 16px 0 2px var(--color-secondary-dark);
+  box-shadow: -16px 16px 0 0 var(--color-primary-light) -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 /* Formats section */
@@ -279,6 +279,32 @@ address {
   flex-basis: calc((100% - 40px) / 3);
 }
 
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
+.carousel-button:hover .carousel-arrow{
+  fill: var(--color-primary-light);
+}
+
+.carousel-arrow {
+  fill: var(--color-primary-dark);
+}
+
 /* Contacts */
 .contact-title {
   margin-bottom: 16px;
@@ -297,6 +323,10 @@ address {
 
 .address-copyright {
   font-size: 14px;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
 }
 
 .footer {
